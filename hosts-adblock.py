@@ -10,7 +10,7 @@ HOST_LIKE_LISTS = [
     ('http://someonewhocares.org/hosts/hosts', None),
     ('http://winhelp2002.mvps.org/hosts.txt', None),
     ('http://adaway.org/hosts.txt', None),
-    ('http://adblock.mahakala.is/', HEADERS),
+    #('http://adblock.mahakala.is/', HEADERS),
 ]
 
 HOST = "0.0.0.0"
