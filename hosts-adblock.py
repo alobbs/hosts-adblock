@@ -15,7 +15,7 @@ HOST_LIKE_LISTS = [
 
 HOST = "0.0.0.0"
 OUTPUT_FILE = 'hosts-adblock-alobbs'
-COMMENT = ("alobbs hosts adblock", "https://github.com/alobbs/host-adblock")
+COMMENT = ("alobbs hosts adblock", "https://github.com/alobbs/hosts-adblock")
 
 
 def bad_domain(d):
