@@ -54,6 +54,6 @@ for (url, headers) in HOST_LIKE_LISTS:
 
 with open(OUTPUT_FILE, 'w+') as f:
     f.write(''.join(['# {}\n'.format(l) for l in COMMENT]))
-    f.write(''.join(['{} {}\n'.format(HOST, n) for n in domains]))
+    f.write(''.join(['{} {}\n'.format(HOST, n) for n in sorted(domains)]))
 
 print("{} creater with {} entries".format(OUTPUT_FILE, len(domains)))
