@@ -9,6 +9,7 @@ https://github.com/alobbs/hosts-adblock/raw/master/hosts-adblock-alobbs
 If you run a instance of dnsmasq, you can improve dramatically the quality of your everyday Internet experience in two easy steps:
 
 1. Add a `addn-hosts` entry to your `dnsmasq.conf` file, so it reads to hosts file:
+
    ```
    addn-hosts=/path/to/hosts-adblock-alobbs
    ```
