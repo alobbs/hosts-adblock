@@ -1,4 +1,7 @@
+import re
+
 import requests
+import whitelist
 
 AGENT = 'Mozilla/5.0 (X11; Linux x86_64; rv:30.0) Gecko/20100101 Firefox/30.0'
 HEADERS = {'Referer': 'http://forum.xda-developers.com/', 'User-Agent': AGENT}
@@ -22,6 +25,8 @@ def bad_domain(d):
     if not d or not d.strip():
         return True
     if any([n in d for n in ['127.0.0.1', '::1', '#', ' ', '\\', '$']]):
+        return True
+    if any([re.match(ex, d) for ex in whitelist.allow]):
         return True
 
 
