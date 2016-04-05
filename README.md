@@ -1,4 +1,4 @@
-# :shipit: Ad blocking hosts file
+# :shipit: Advertisement blocking «hosts» file
 Download the hosts file form the following URL:
 
 ```
