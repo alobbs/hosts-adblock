@@ -9,7 +9,7 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 os.system("./hosts-adblock.py")
 
 # Push to Github is needed
-with os.popen("git add hosts-adblock-alobbs") as f:
+with os.popen("git diff hosts-adblock-alobbs") as f:
     has_update = len(f.read()) > 1
 
 if has_update:
